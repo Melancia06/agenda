@@ -1,0 +1,75 @@
+p{
+    font-family: monospace;
+    background-color: aqua;
+    border-right: 4px solid ;
+    white-space: nowrap;
+    width: 210px;
+    overflow: hidden;
+    animation: animaTexto steps(210) 4s;
+}
+
+
+@keyframes animaMarcador{
+    50%{
+        border-right:transparent;
+    }
+}
+@keyframes animaTexto{
+    0%{
+        width: 0;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+body{
+   
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+
+}
+.gallery{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    perspective: 800px;
+}
+
+.front, .back{
+    width: 100%;
+    height: 100%;
+    left: 100vh ;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: all 1s;
+    border: 2px solid rgb(168, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.front{
+    background-color: black;
+    color: aliceblue;
+}
+.back{
+    background-color: blue;
+    transform: rotateY(-180deg);
+
+}
+.card:hover .front{
+    transform: rotateY(1.0deg);
+}
+.card:hover .back{
+    transform: rotateY(0);
+}
+
+

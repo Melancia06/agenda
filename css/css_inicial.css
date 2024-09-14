@@ -1,0 +1,15 @@
+.campo_favorito{
+    background-color:rgb(0, 78, 26);
+    width: 200px;
+    height: 300px;
+    position: relative;
+   left: 400px;
+   padding-left: 31px !important;
+   padding-right: 31px !important;
+}
+.input{
+    left: 19px;
+    width: 200px;
+    height: 34px;
+
+}

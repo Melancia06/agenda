@@ -1,0 +1,12 @@
+.marca{
+    position: absolute;
+   background-color:rgba(0, 192, 10, 0.3);
+   left: 40%;
+   top: 25%;
+    padding: 35px;
+    border-radius: 18px;
+    color: aliceblue;
+}
+.marca-marca:hover{
+    background-color:rgb(6, 104, 31);
+}

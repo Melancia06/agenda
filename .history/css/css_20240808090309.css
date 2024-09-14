@@ -1,0 +1,10 @@
+.marca{
+    color:rgb(0, 0, 0);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 10px;
+}
+.btn-white.active, .btn-white:hover{
+    background-color: var(--color-primary);
+}
